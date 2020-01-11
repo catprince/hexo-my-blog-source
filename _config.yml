@@ -11,6 +11,13 @@ author: Catprince
 language: cn
 timezone:
 
+sidebar:
+   avatar: /images/avatar.jpg
+   subtitle: 前端开发
+   location: hangzhou
+   social:
+     github: https://github.com/catprince
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://catprince.github.io
@@ -73,7 +80,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yilia
+theme: aloha
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
