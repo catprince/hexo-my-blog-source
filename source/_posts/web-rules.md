@@ -16,7 +16,7 @@ tags:
 * HTML，CSS，JS 的 tab 统一四个空格，保持代码的一致性。
 * 设置文件编码为 UTF-8
 
-## 文件命名
+## 文件命名(目前项目中大多为驼峰式，需讨论)  
 
 文件名建议只使用小写字母，不使用大写字母，词与词之间通过 “ - ” 连接。  
 为了醒目，某些说明文件的文件名，可以使用大写字母，比如 README、LICENSE。  
@@ -54,7 +54,7 @@ HTML结构大的模块标记开始和结束，方便阅读，新闻类的页面�
 <img class="avatar" src="...">
 ```
 
-4. Class 与 ID
+4. Class 与 ID（目前项目中大多不统一，同一人代码也有不统一情况）  
     - Class 应以功能或内容命名，不以表现形式命名；
     - Class 与 ID单词字母小写，多个单词组成时，采用中划线 “ - ” 分隔；
     - 使用唯一的 ID，同时避免创建无样式信息的 Class；
@@ -304,20 +304,20 @@ function foo(p1, p2, p3) {
 5. 命名 （不强制遵守）  
   - 变量，使用 Camel 命名法。  
 ```javascript
-var loadingModules = {};
+var loadingModules = {}
 ```
   - boolean 类型的变量使用 is 或 has 开头。
 ```javascript
-var isReady = false;
-var hasMoreCommands = false;
+var isReady = false
+var hasMoreCommands = false
 ```
   - 私有属性、变量和方法以下划线 _ 开头。
 ```javascript
-var _privateMethod = {};
+var _privateMethod = {}
 ```
   - 常量，使用全部字母大写，单词间下划线分隔的命名方式。
 ```javascript
-var HTML_ENTITY = {};
+var HTML_ENTITY = {}
 ```
   - 函数，使用 Camel 命名法。
   - 函数的参数，使用 Camel 命名法。
@@ -330,13 +330,13 @@ function hear(theBells) {}
   - 类的 方法 / 属性, 使用 Camel 命名法。
 ```javascript
 function TextNode(value, engine) {
-    this.value = value;
-    this.engine = engine;
+    this.value = value
+    this.engine = engine
 }
 
 TextNode.prototype.clone = function () {
-    return this;
-};
+    return this
+}
 ```
   - 枚举变量使用 Pascal 命名法。
   - 枚举的属性， 使用全部字母大写，单词间下划线分隔的命名方式。
@@ -346,7 +346,7 @@ var TargetState = {
     READED: 2,
     APPLIED: 3,
     READY: 4
-};
+}
 ```
   - 由多个单词组成的缩写词，在命名中，根据当前命名法和出现的位置，所有字母的大小写与首字母的大小写保持一致。
 ```javascript
@@ -354,10 +354,14 @@ function XMLParser() {}
 
 function insertHTML(element, html) {}
 
-var httpRequest = new HTTPRequest();
+var httpRequest = new HTTPRequest()
 ```
+
+  - 末尾无需加 ；  
+网校项目都不需要加，代码统一  
+
 ## 组件
-以 vue 为例  
+### 以 vue 为例  
 组件一般情况下是可以拆成基础/ui部分和业务部分，基础组件一般是承载呈现，基础功能，不和业务耦合部分。  
 业务组件一般包含业务功能业务特殊数据等等。  
 1. UI组件/基础组件
@@ -370,6 +374,7 @@ var httpRequest = new HTTPRequest();
 
   - 避免数据的分发源混乱，不建议使用eventBus控制数据，应使用props来和$emit来数据分发和传送。  
   - 同级组件的通讯一般会有一个中间容器组件作为桥梁，容器组件作为数据的接受和分发点。
+  
 ## 性能优化
 ### 尽量避免重定向
 ### 减少http请求次数  

@@ -11,13 +11,42 @@ author: Catprince
 language: cn
 timezone:
 
-sidebar:
-   avatar: /images/avatar.jpg
-   subtitle: 前端开发
-   location: hangzhou
-   social:
-     github: https://github.com/catprince
+# Sidebar profile
+profile:
+  # 邮箱用于生成 gravatar 头像，如配置了 `hexo.config.email`，此项可缺省
+  #email: imcatimcool0909@126.com
 
+  # 也可以直接设置头像 URL
+  avatar: /images/avater.jpg
+
+  # 个性签名
+  bio: Mr Brightside.
+
+menu:
+  主页: /
+  # 关于: /about
+  # 搜索: /search
+  Github: https://github.com/catprince
+  
+sns:
+  email:
+  feed:
+  github:
+  twitter:
+  facebook:
+  instagram:
+  tumblr:
+  dribbble:
+  telegram:
+  youtube:
+  hangouts:
+  linkedin:
+  pinterest:
+  soundcloud:
+  myspace:
+  weibo:
+  qq:
+    
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://catprince.github.io
@@ -80,7 +109,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: aloha
+theme: inside
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
